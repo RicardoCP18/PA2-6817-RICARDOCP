@@ -9,7 +9,7 @@ scaler = joblib.load("modelos/scaler_model.pkl")
 st.title("🩺 Predicción de Diabetes")
 
 # Mis Datos
-st.write("Nombre: RICARDO MARTIN CESPEDES PINO")
+st.write("Nombre del autor: RICARDO MARTIN CESPEDES PINO")
 st.write("Código ISIL: 71240691")
 # Link de Colab
 st.markdown("https://colab.research.google.com/drive/11oBppWOzXTqCWIlwP8E6jjoedXLwbvdF?usp=sharing")
