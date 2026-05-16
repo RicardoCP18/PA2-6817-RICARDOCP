@@ -6,19 +6,31 @@ import numpy as np
 modelo = joblib.load("modelos/random_forest_model.pkl")
 scaler = joblib.load("modelos/scaler_model.pkl")
 
-st.title("Predicción de Diabetes")
+st.title("🩺 Predicción de Diabetes")
 
-st.write("Aplicación desarrollada para PA2")
+st.write("Ingrese los datos del paciente y presione el botón Predecir.:")
 
 # Entradas del usuario
 pregnancies = st.number_input("Pregnancies", min_value=0, step=1)
-glucose = st.number_input("Glucose", min_value=0)
-bloodpressure = st.number_input("Blood Pressure", min_value=0)
-skinthickness = st.number_input("Skin Thickness", min_value=0)
-insulin = st.number_input("Insulin", min_value=0)
-bmi = st.number_input("BMI", min_value=0.0, format="%.1f")
-dpf = st.number_input("Diabetes Pedigree Function", min_value=0.0, format="%.3f")
-age = st.number_input("Age", min_value=0, step=1)
+
+glucose = st.number_input("Glucose", min_value=0.0, step=1.0)
+
+bloodpressure = st.number_input("Blood Pressure", min_value=0.0, step=1.0)
+
+skinthickness = st.number_input("Skin Thickness", min_value=0.0, step=1.0)
+
+insulin = st.number_input("Insulin", min_value=0.0, step=1.0)
+
+bmi = st.number_input("BMI", min_value=0.0, step=0.1, format="%.1f")
+
+dpf = st.number_input(
+    "Diabetes Pedigree Function",
+    min_value=0.0,
+    step=0.001,
+    format="%.3f"
+)
+
+age = st.number_input("Age", min_value=1, max_value=120, step=1)
 
 # Botón de predicción
 if st.button("Predecir"):
