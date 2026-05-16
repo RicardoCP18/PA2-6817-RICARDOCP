@@ -10,6 +10,13 @@ st.title("🩺 Predicción de Diabetes")
 
 st.write("Ingrese los datos del paciente y presione el botón Predecir.:")
 
+# Mis Datos
+st.write("Nombre: RICARDO MARTIN CESPEDES PINO")
+st.write("Código ISIL: 71240691")
+
+# Link de Colab
+st.markdown("https://colab.research.google.com/drive/11oBppWOzXTqCWIlwP8E6jjoedXLwbvdF?usp=sharing")
+
 # Entradas del usuario
 pregnancies = st.number_input("Pregnancies", min_value=0, step=1)
 
