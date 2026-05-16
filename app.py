@@ -13,6 +13,8 @@ st.write("Nombre del autor: RICARDO MARTIN CESPEDES PINO")
 st.write("Código ISIL: 71240691")
 # Link de Colab
 st.markdown("https://colab.research.google.com/drive/11oBppWOzXTqCWIlwP8E6jjoedXLwbvdF?usp=sharing")
+# Link de Github
+st.markdown("https://github.com/RicardoCP18/PA2-6817-RICARDOCP")
 
 st.write("Ingrese los datos del paciente y presione el botón Predecir.:")
 # Entradas del usuario
