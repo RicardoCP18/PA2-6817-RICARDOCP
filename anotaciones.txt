@@ -1,1 +1,2 @@
 PROMPT:
+Genera una aplicación web en Streamlit para predecir diabetes utilizando un modelo Random Forest entrenado con Scikit-Learn y cargado desde un archivo .pkl. La aplicación debe permitir ingresar datos médicos del paciente mediante campos numéricos, aplicar escalado de datos con StandardScaler y mostrar el resultado de la predicción indicando si la persona tiene diabetes o no. Además, incluir el nombre del estudiante, código ISIL y un enlace al cuaderno de Google Colab.
