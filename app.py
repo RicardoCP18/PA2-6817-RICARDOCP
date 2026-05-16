@@ -8,15 +8,13 @@ scaler = joblib.load("modelos/scaler_model.pkl")
 
 st.title("🩺 Predicción de Diabetes")
 
-st.write("Ingrese los datos del paciente y presione el botón Predecir.:")
-
 # Mis Datos
 st.write("Nombre: RICARDO MARTIN CESPEDES PINO")
 st.write("Código ISIL: 71240691")
-
 # Link de Colab
 st.markdown("https://colab.research.google.com/drive/11oBppWOzXTqCWIlwP8E6jjoedXLwbvdF?usp=sharing")
 
+st.write("Ingrese los datos del paciente y presione el botón Predecir.:")
 # Entradas del usuario
 pregnancies = st.number_input("Pregnancies", min_value=0, step=1)
 
@@ -63,11 +61,3 @@ if st.button("Predecir"):
         st.error("La persona tiene diabetes")
     else:
         st.success("La persona NO tiene diabetes")
-
-# Mis Datos
-st.write("Nombre: RICARDO MARTIN CESPEDES PINO")
-st.write("Código ISIL: 71240691")
-
-# Link de Colab
-st.markdown("https://colab.research.google.com/drive/11oBppWOzXTqCWIlwP8E6jjoedXLwbvdF?usp=sharing")
-
